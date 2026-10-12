@@ -9,7 +9,7 @@ jobs:
   detect_breaking_changes:
     runs-on: 'ubuntu-latest'
     name: detect-breaking-changes
-    if: github.repository == 'openai/openai-go'
+    if: github.repository == 'openai/openai-go' || github.repository == 'victorftrdba/openai-go-cagent-compat'
     steps:
       - name: Calculate fetch-depth
         run: |
